@@ -1,0 +1,26 @@
+body {
+  background: #1e1e1e;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2em;
+}
+
+button {
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #666;
+}
+
+#roundInfo {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
