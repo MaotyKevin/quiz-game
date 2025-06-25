@@ -24,3 +24,21 @@ button:hover {
   font-size: 1.2em;
   margin-bottom: 20px;
 }
+
+
+.players-list {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(30, 30, 30, 0.85);
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  max-width: 200px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+}

@@ -41,3 +41,16 @@ function decode(text) {
   txt.innerHTML = text;
   return txt.value;
 }
+
+const playersListDiv = document.getElementById("playersList");
+
+socket.on("players", players => {
+  scoresDiv.innerHTML = "<h2>Scores</h2>";
+  for (const [id, p] of Object.entries(players)) {
+    scoresDiv.innerHTML += `${p.name}: ${p.score}<br>`;
+  }
+
+  // Update players list top-right
+  playersListDiv.innerHTML = "<strong>Players:</strong><br>" +
+    Object.values(players).map(p => p.name).join("<br>");
+});
